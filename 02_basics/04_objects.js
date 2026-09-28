@@ -52,13 +52,42 @@ const users = [
     },
 ]
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')); // returns true
-console.log(tinderUser.hasOwnProperty('isLogged')); // returns false
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); // returns true
+// console.log(tinderUser.hasOwnProperty('isLogged')); // returns false
 
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course
+
+console.log(instructor); // object destructuring in js
+
+// const navbar = ({company}) => {
+
+// }
+// navbar(company = "hitesh") // object destructing in js for react
+
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",   // **this is how json looks like **
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
